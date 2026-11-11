@@ -91,6 +91,10 @@ h2{font:700 clamp(1.8rem,3.5vw,2.4rem)/1.1 var(--display);letter-spacing:.01em;m
 .tcard img{width:96px;height:96px;flex:none}
 .tcard h3{font:700 1.5rem/1.1 var(--display);margin:0 0 4px}
 .tcard p{margin:0;color:var(--muted);font-size:.95rem}
+a.tcard{color:inherit;text-decoration:none}
+a.tcard:hover{border-top-color:var(--gold);background:var(--hover)}
+.tcard .go{display:inline-block;margin-top:8px;font-weight:600;color:var(--accent)}
+a.tcard:hover .go{text-decoration:underline}
 .sub-h{font:700 1.5rem/1.1 var(--display);letter-spacing:.02em;margin:40px 0 14px}
 
 /* teams */
@@ -249,8 +253,8 @@ dialog::backdrop{background:rgba(4,8,22,.65)}
     </div>
     <h3 class="sub-h">Tournaments we have hosted</h3>
     <div class="past">
-      <div class="tcard"><img data-img="s3" alt=""><div><span class="badge done">Hosted</span><h3>SPL Season 3</h3><p>Sur Premier League, Season 3</p></div></div>
-      <div class="tcard"><img data-img="sm" alt=""><div><span class="badge done">Hosted</span><h3>SPL Season 2</h3><p>Sur Premier League, Season 2</p></div></div>
+      <a class="tcard" href="https://cricheroes.com/tournament/1612060/sur-premier-league-season-3/matches/past-matches" target="_blank" rel="noopener" aria-label="SPL Season 3 matches, opens in a new tab"><img data-img="s3" alt=""><div><span class="badge done">Hosted</span><h3>SPL Season 3</h3><p>Sur Premier League, Season 3</p><span class="go">View matches &rarr;</span></div></a>
+      <a class="tcard" href="https://cricheroes.com/tournament/1248184/sur-premier-league-season-2/matches/past-matches" target="_blank" rel="noopener" aria-label="SPL Season 2 matches, opens in a new tab"><img data-img="sm" alt=""><div><span class="badge done">Hosted</span><h3>SPL Season 2</h3><p>Sur Premier League, Season 2</p><span class="go">View matches &rarr;</span></div></a>
     </div>
   </div>
 </section>
